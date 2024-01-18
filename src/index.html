@@ -91,15 +91,17 @@
               <h2 class="text-xs text-indigo-400 tracking-widest font-medium title-font mb-1">USER WORK SAMPLES</h2>
               <h1 class="sm:text-3xl text-2xl font-medium title-font text-white">Repositories</h1>
             </div>
-            <div class="flex flex-col md:flex-row text-center w-full mb-20 gap-1 md:gap-8" id="repoperpage">
+            <div class="flex justify-center flex-col md:flex-row text-center w-full mb-20 gap-1 md:gap-8" id="repoperpage">
               <button  class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline- transition-all
-               duration-300 rounded-full hover:text-gray-600 hover:bg-gray-200 focus:shadow-none bg-gray-200 text-gray-600" onclick="showall()" id="allrepo">Show All Repositories</button>
+              duration-300 rounded-full hover:text-gray-600 hover:bg-gray-200 focus:shadow-none text-gray-200" onclick="showall()" id="allrepo">Show All Repositories</button>
               <button class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline- transition-all
                duration-300 rounded-full hover:text-gray-600 hover:bg-gray-200 focus:shadow-none text-gray-200" id="tenrepo" onclick="show10repo(1)">10 Repositories per page</button>
               <!-- <input type="text" id="repopagenumber"
                 class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 
                 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                minlength="3"> -->
+                minlength="3" > -->
+                <input oninput="changeHandler()" id="inputtab" type="text" name="firstName" placeholder="🔍 Repositories" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 
+                focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
             <div class="flex flex-wrap -m-4" id="repo">
             </div>
